@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /logs/
+Disallow: /process_form.php
+
+Sitemap: https://donbassit.ru/sitemap.xml
