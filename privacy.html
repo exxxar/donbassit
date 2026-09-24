@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Политика обработки персональных данных компании Донбасс АйТи (DOIT) в соответствии с 152-ФЗ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Политика конфиденциальности — Донбасс АйТи (DOIT)</title>
+    <meta name="description" content="Политика обработки персональных данных компании Донбасс АйТи (DOIT). Соответствие 152-ФЗ и 38-ФЗ (ред. от 01.09.2025).">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://donbassit.ru/privacy.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Донбасс АйТи (DOIT)">
+    <meta property="og:title" content="Политика конфиденциальности — DOIT">
+    <meta property="og:description" content="Политика обработки персональных данных в соответствии с 152-ФЗ и 38-ФЗ">
+    <meta property="og:url" content="https://donbassit.ru/privacy.html">
+    <meta property="og:image" content="https://donbassit.ru/og-image.php?title=Веб-разработка&subtitle=Laravel + Vue.js">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Политика конфиденциальности — DOIT">
+    <meta name="twitter:description" content="Политика обработки персональных данных в соответствии с 152-ФЗ">
+    <meta name="twitter:image" content="https://donbassit.ru/assets/images/og-cover.jpg">
+
+    <meta name="theme-color" content="#0a0a0f">
+    <style>
+        .privacy {
+            padding-top: 120px;
+            padding-bottom: 80px;
+        }
+        .privacy__container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .privacy__header {
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+        .privacy__title {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+        .privacy__meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .privacy__meta strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .privacy__section {
+            margin-bottom: 32px;
+        }
+        .privacy__section h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .privacy__section h2 .privacy__num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            color: var(--text-inverse);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .privacy__section p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .privacy__section ul {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0;
+        }
+        .privacy__section ul li {
+            position: relative;
+            padding: 8px 0 8px 24px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .privacy__section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 16px;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+        .privacy__table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .privacy__table th,
+        .privacy__table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+        .privacy__table th {
+            background: var(--bg-elevated);
+            color: var(--accent-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+        .privacy__table td {
+            color: var(--text-secondary);
+        }
+        .privacy__table tr:last-child td {
+            border-bottom: none;
+        }
+        .privacy__card {
+            padding: 20px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-md);
+            margin: 16px 0;
+        }
+        .privacy__card strong {
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 4px;
+        }
+        .privacy__card span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .privacy__back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 32px;
+            color: var(--accent);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .privacy__back:hover {
+            gap: 12px;
+        }
+        .privacy__cookies-info {
+            padding: 16px 20px;
+            background: var(--accent-glow);
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius-md);
+            margin: 16px 0;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header class="privacy-header-bar">
+    <div class="privacy-header-bar__inner">
+        <a href="index2.html" class="logo">
+            <div class="logo__main">
+                <span class="logo__text">DOIT</span>
+                <span class="logo__dot"></span>
+            </div>
+            <span class="logo__subtitle">Донбасс АйТи</span>
+        </a>
+    </div>
+</header>
+
+    <main class="privacy">
+        <div class="privacy__container">
+            <header class="privacy__header">
+                <h1 class="privacy__title">Политика обработки персональных данных</h1>
+                <div class="privacy__meta">
+                    <span>Редакция: <strong>24 сентября 2026 г.</strong></span>
+                    <span>Действует с: <strong>24 сентября 2026 г.</strong></span>
+                    <span>Соответствует: <strong>152-ФЗ</strong></span>
+                </div>
+            </header>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">1</span>Общие положения</h2>
+                <p>
+                    Настоящая Политика обработки персональных данных (далее — Политика) разработана в соответствии
+                    с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и определяет порядок
+                    обработки персональных данных, а также меры по обеспечению их безопасности, предпринимаемые
+                    ИП Гукай Алексей Сергеевич (далее — Оператор).
+                </p>
+                <p>
+                    Используя сайт <strong>donbassit.ru</strong> (далее — Сайт), вы подтверждаете, что ознакомились
+                    с настоящей Политикой и даёте согласие на обработку ваших персональных данных в порядке и на
+                    условиях, указанных ниже.
+                </p>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">2</span>Оператор персональных данных</h2>
+                <div class="privacy__card">
+                    <strong>ИП Гукай Алексей Сергеевич</strong>
+                    <span>ОГРНИП: 315932000000000 · ИНН: 930000000000</span>
+                </div>
+                <div class="privacy__card">
+                    <strong>Юридический адрес</strong>
+                    <span>283000, ДНР, г. Донецк, ул. Артема, 00</span>
+                </div>
+                <div class="privacy__card">
+                    <strong>Контакты ответственного за обработку ПД</strong>
+                    <span>
+                        Email: <a href="mailto:privacy@donbassit.ru" style="color: var(--accent);">privacy@donbassit.ru</a><br>
+                        Telegram: <a href="https://t.me/doit_privacy" style="color: var(--accent);">@doit_privacy</a>
+                    </span>
+                </div>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">3</span>Какие данные мы собираем</h2>
+                <p>Оператор обрабатывает следующие категории персональных данных:</p>
+                <table class="privacy__table">
+                    <thead>
+                        <tr>
+                            <th>Категория</th>
+                            <th>Состав данных</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Идентификационные</td>
+                            <td>Имя, фамилия</td>
+                        </tr>
+                        <tr>
+                            <td>Контактные</td>
+                            <td>Email, номер телефона, Telegram-ник</td>
+                        </tr>
+                        <tr>
+                            <td>Профессиональные</td>
+                            <td>Должность, компания, уровень квалификации, описание опыта</td>
+                        </tr>
+                        <tr>
+                            <td>Технические</td>
+                            <td>IP-адрес, данные cookies, тип браузера и ОС, время посещения</td>
+                        </tr>
+                        <tr>
+                            <td>Пользовательские</td>
+                            <td>Содержание сообщений, тематика обращения, предпочтения</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>Мы не собираем</strong> биометрические, специальные категории персональных данных,
+                    а также данные о расовой, национальной принадлежности, политических взглядах, религиозных
+                    и философских убеждениях, состоянии здоровья, интимной жизни.
+                </p>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">4</span>Цели обработки персональных данных</h2>
+                <ul>
+                    <li>Рассмотрение обращений и заявок, поступающих через формы обратной связи</li>
+                    <li>Заключение и исполнение договоров на оказание IT-услуг</li>
+                    <li>Информирование о статусе заявок, проектов и изменений в услугах</li>
+                    <li>Обратная связь по проектам, согласование технических деталей</li>
+                    <li>Рассмотрение резюме и приглашение на собеседования</li>
+                    <li>Улучшение работы Сайта и пользовательского опыта (на основе обезличенных данных)</li>
+                    <li>Исполнение требований законодательства Российской Федерации</li>
+                </ul>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">5</span>Правовые основания обработки</h2>
+                <p>Обработка персональных данных осуществляется на следующих правовых основаниях:</p>
+                <ul>
+                    <li><strong>Согласие субъекта ПД</strong> — ст. 6 ч. 1 п. 1 152-ФЗ (формы обратной связи, подписки)</li>
+                    <li><strong>Необходимость для исполнения договора</strong> — ст. 6 ч. 1 п. 5 152-ФЗ (оказание услуг)</li>
+                    <li><strong>Законные интересы Оператора</strong> — ст. 6 ч. 1 п. 7 152-ФЗ (улучшение сервиса)</li>
+                    <li><strong>Исполнение требований законодательства</strong> — ст. 6 ч. 1 п. 2, 3, 6 152-ФЗ</li>
+                </ul>
+                <div class="privacy__cookies-info">
+                    💡 <strong>Важно:</strong> с 1 сентября 2025 г. согласие на обработку ПД оформляется отдельно от
+                    иных соглашений, оферт и пользовательских соглашений (ФЗ № 264-ФЗ от 08.08.2024).
+                </div>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">6</span>Согласие пользователя</h2>
+                <p>
+                    Перед отправкой любой формы на Сайте пользователь даёт <strong>отдельное, конкретное,
+                    информированное и сознательное согласие</strong> на обработку персональных данных,
+                    проставляя галочку в соответствующем чекбоксе.
+                </p>
+                <p>Согласие считается данным с момента:</p>
+                <ul>
+                    <li>простановки отметки в чекбоксе согласия под формой</li>
+                    <li>нажатия кнопки отправки формы</li>
+                </ul>
+                <p>
+                    Оператор фиксирует факт согласия (IP-адрес, дату, время, версию Политики) в журнале
+                    согласий для подтверждения законности обработки.
+                </p>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">7</span>Сроки обработки и хранения</h2>
+                <table class="privacy__table">
+                    <thead>
+                        <tr>
+                            <th>Тип данных</th>
+                            <th>Срок хранения</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Заявки через формы обратной связи</td>
+                            <td>3 года с даты обращения</td>
+                        </tr>
+                        <tr>
+                            <td>Данные по исполненным договорам</td>
+                            <td>5 лет (в соответствии с требованиями бухгалтерского и налогового учёта)</td>
+                        </tr>
+                        <tr>
+                            <td>Резюме кандидатов</td>
+                            <td>12 месяцев с даты отклика</td>
+                        </tr>
+                        <tr>
+                            <td>Журналы согласий на обработку ПД</td>
+                            <td>Весь срок обработки + 3 года после отзыва согласия</td>
+                        </tr>
+                        <tr>
+                            <td>Технические cookies</td>
+                            <td>До окончания сессии или 1 год</td>
+                        </tr>
+                        <tr>
+                            <td>Аналитические cookies</td>
+                            <td>До 24 месяцев</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">8</span>Передача данных третьим лицам</h2>
+                <p>Оператор не передаёт персональные данные третьим лицам, за исключением случаев:</p>
+                <ul>
+                    <li>получения прямого согласия субъекта ПД</li>
+                    <li>требований законодательства РФ (по запросам уполномоченных органов)</li>
+                    <li>передачи партнёрам-обработчикам (хостинг, почтовый сервис, CRM) при наличии договора
+                        о конфиденциальности и соблюдении требований 152-ФЗ</li>
+                </ul>
+                <p>
+                    <strong>Локализация данных:</strong> первичный сбор и хранение персональных данных
+                    граждан РФ осуществляется на серверах, физически расположенных на территории
+                    Российской Федерации (требование ст. 18 ч. 5 152-ФЗ).
+                </p>
+                <p>
+                    <strong>Трансграничная передача</strong> возможна только при наличии отдельного
+                    согласия субъекта ПД и при условии надлежащей защиты данных на территории страны-получателя.
+                    При необходимости Оператор направляет уведомление в Роскомнадзор.
+                </p>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">9</span>Cookies и аналитика</h2>
+                <p>Сайт использует следующие категории cookies:</p>
+                <table class="privacy__table">
+                    <thead>
+                        <tr>
+                            <th>Категория</th>
+                            <th>Назначение</th>
+                            <th>Требует согласия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Технические (необходимые)</td>
+                            <td>Работа форм, cookie-баннер, сессии</td>
+                            <td>Нет</td>
+                        </tr>
+                        <tr>
+                            <td>Функциональные</td>
+                            <td>Запоминание настроек и предпочтений</td>
+                            <td>Да</td>
+                        </tr>
+                        <tr>
+                            <td>Аналитические</td>
+                            <td>Яндекс.Метрика, статистика посещений</td>
+                            <td>Да</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Вы можете в любой момент изменить свои предпочтения по cookies, нажав кнопку ниже,
+                    либо отключить их в настройках браузера.
+                </p>
+                <button class="btn btn--accent" onclick="window.showCookieSettings && window.showCookieSettings()" style="margin-top: 16px;">
+                    ⚙️ Настроить cookies
+                </button>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">10</span>Права субъекта персональных данных</h2>
+                <p>В соответствии с 152-ФЗ вы имеете право:</p>
+                <ul>
+                    <li>получить информацию об обработке ваших персональных данных</li>
+                    <li>требовать уточнения, блокирования или уничтожения данных, если они неполные, устаревшие,
+                        неточные или незаконно полученные</li>
+                    <li>отозвать ранее данное согласие на обработку ПД</li>
+                    <li>требовать прекращения обработки данных</li>
+                    <li>получить копию ваших данных в структурированном, машиночитаемом формате</li>
+                    <li>обжаловать действия Оператора в Роскомнадзор или в суд</li>
+                </ul>
+                <p>
+                    Для реализации своих прав направьте запрос на email
+                    <a href="mailto:privacy@donbassit.ru" style="color: var(--accent);">privacy@donbassit.ru</a>
+                    или через Telegram
+                    <a href="https://t.me/doit_privacy" style="color: var(--accent);">@doit_privacy</a>.
+                    Срок ответа — не более 10 рабочих дней.
+                </p>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">11</span>Меры защиты данных</h2>
+                <p>Для защиты персональных данных Оператор применяет:</p>
+                <ul>
+                    <li>протокол шифрования HTTPS (SSL/TLS) для передачи данных</li>
+                    <li>ограничение доступа к данным (RBAC, принцип минимальных привилегий)</li>
+                    <li>санитизацию и валидацию всех входящих данных</li>
+                    <li>регулярное резервное копирование</li>
+                    <li>обновление ПО и применение патчей безопасности</li>
+                    <li>логирование действий администраторов</li>
+                    <li>ограничение физического доступа к серверам</li>
+                </ul>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">12</span>Отзыв согласия</h2>
+                <p>
+                    Вы вправе в любой момент отозвать данное ранее согласие на обработку персональных данных,
+                    направив письменное заявление в свободной форме на адрес
+                    <a href="mailto:privacy@donbassit.ru" style="color: var(--accent);">privacy@donbassit.ru</a>.
+                </p>
+                <p>
+                    Отзыв согласия не влияет на законность обработки, произведённой до момента его получения.
+                    После отзыва Оператор прекращает обработку данных, за исключением случаев, когда обработка
+                    необходима для исполнения требований закона или защиты законных интересов.
+                </p>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">13</span>Заключительные положения</h2>
+                <p>
+                    Оператор оставляет за собой право вносить изменения в настоящую Политику.
+                    Актуальная редакция всегда доступна по адресу:
+                    <a href="privacy.html" style="color: var(--accent);">donbassit.ru/privacy.html</a>.
+                </p>
+                <p>
+                    При существенных изменениях (новые цели обработки, передача данных третьим лицам)
+                    Оператор уведомляет пользователей через баннер на Сайте или по email, если он был указан.
+                </p>
+                <p>
+                    Все споры, связанные с обработкой персональных данных, разрешаются путём переговоров,
+                    а при невозможности — в судебном порядке в соответствии с законодательством Российской Федерации.
+                </p>
+            </section>
+
+            <section class="privacy__section" id="pd-consent">
+                <h2><span class="privacy__num">15</span>Документ: Согласие на обработку персональных данных</h2>
+                <div class="privacy__card">
+                    <strong>Настоящим я, субъект персональных данных, даю согласие ИП Гукай А.С.</strong>
+                    <span>на обработку моих персональных данных на условиях, определённых ниже</span>
+                </div>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    15.1. Оператор
+                </h3>
+                <p>ИП Гукай Алексей Сергеевич, ОГРНИП 315932000000000, ИНН 930000000000, адрес: 283000, ДНР, г. Донецк, ул. Артема, 00.</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    15.2. Цель обработки
+                </h3>
+                <ul>
+                    <li>Рассмотрение моей заявки, поступившей через форму обратной связи на сайте donbassit.ru</li>
+                    <li>Осуществление обратной связи по существу моего обращения</li>
+                    <li>Подготовка коммерческого предложения или ответов на вопросы</li>
+                </ul>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    15.3. Перечень обрабатываемых данных
+                </h3>
+                <p>Фамилия, имя; адрес электронной почты; номер телефона; никнейм в мессенджерах; содержание обращения; технические данные (IP, cookies, User-Agent).</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    15.4. Перечень действий с данными
+                </h3>
+                <p>Сбор, запись, систематизация, накопление, хранение, уточнение, извлечение, использование, передача (см. Согласие на передачу), обезличивание, блокирование, удаление, уничтожение.</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    15.5. Способы обработки
+                </h3>
+                <p>Автоматизированная, с использованием средств вычислительной техники, а также без использования таких средств.</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    15.6. Срок действия согласия
+                </h3>
+                <p>Согласие действует с момента его предоставления до момента отзыва в письменной форме на адрес <a href="mailto:privacy@donbassit.ru" style="color: var(--accent);">privacy@donbassit.ru</a> либо до достижения целей обработки.</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    15.7. Порядок отзыва
+                </h3>
+                <p>Согласие может быть отозвано в любой момент путём направления письменного заявления Оператору. Отзыв не влияет на законность обработки, произведённой до его получения.</p>
+            </section>
+
+            <section class="privacy__section" id="transfer-consent">
+                <h2><span class="privacy__num">16</span>Документ: Согласие на передачу персональных данных третьим лицам</h2>
+                <div class="privacy__card">
+                    <strong>Согласие оформляется отдельно от основного согласия на обработку ПДн</strong>
+                    <span>в соответствии с требованиями 152-ФЗ (ред. от 01.09.2025)</span>
+                </div>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    16.1. Перечень третьих лиц
+                </h3>
+                <p>Мои персональные данные могут передаваться следующим категориям получателей:</p>
+                <ul>
+                    <li><strong>Почтовые сервисы</strong> (SMTP-провайдеры) — для отправки уведомлений и ответов на мои обращения</li>
+                    <li><strong>Мессенджеры</strong> (Telegram) — для оперативной связи по моему обращению, если указан соответствующий контакт</li>
+                    <li><strong>Сервисы хостинга и облачной инфраструктуры</strong> — для хранения данных в защищённой среде</li>
+                    <li><strong>Сервисы аналитики</strong> (в обезличенном виде) — для улучшения работы Сайта</li>
+                </ul>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    16.2. Цели передачи
+                </h3>
+                <ul>
+                    <li>Доставка ответов на мои обращения</li>
+                    <li>Обеспечение технической работы Сайта и форм обратной связи</li>
+                    <li>Обеспечение безопасности и предотвращение мошенничества</li>
+                </ul>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    16.3. Гарантии защиты
+                </h3>
+                <p>Все третьи лица-получатели обязаны обеспечивать конфиденциальность и безопасность передаваемых данных в соответствии с требованиями 152-ФЗ и заключёнными с Оператором договорами.</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    16.4. Трансграничная передача
+                </h3>
+                <p>При использовании зарубежных сервисов Оператор гарантирует наличие надлежащей защиты данных в стране-получателе и при необходимости направляет уведомление в Роскомнадзор.</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    16.5. Срок действия и отзыв
+                </h3>
+                <p>Согласие действует до момента его отзыва. Отзыв оформляется отдельно или совместно с отзывом основного согласия на обработку ПДн.</p>
+            </section>
+
+            <section class="privacy__section" id="mailing-consent">
+                <h2><span class="privacy__num">17</span>Документ: Согласие на получение рекламных и информационных материалов</h2>
+                <div class="privacy__card">
+                    <strong>Данное согласие НЕ является обязательным</strong>
+                    <span>для отправки заявки. Отказ от рассылки не влияет на рассмотрение обращения.</span>
+                </div>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    17.1. Правовое основание
+                </h3>
+                <p>Согласие даётся в соответствии со ст. 18 Федерального закона от 13.03.2006 № 38-ФЗ «О рекламе» (ред. от 01.09.2025).</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    17.2. Виды материалов
+                </h3>
+                <ul>
+                    <li>Информация о новых услугах и продуктах компании</li>
+                    <li>Специальные предложения, акции и скидки</li>
+                    <li>Полезные материалы по IT-тематике (статьи, кейсы, гайды)</li>
+                    <li>Приглашения на мероприятия и вебинары</li>
+                </ul>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    17.3. Каналы получения
+                </h3>
+                <ul>
+                    <li>Email-рассылки</li>
+                    <li>SMS-сообщения</li>
+                    <li>Push-уведомления (при установке PWA-приложения)</li>
+                    <li>Сообщения в мессенджерах (Telegram, WhatsApp)</li>
+                    <li>Телефонные звонки</li>
+                </ul>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    17.4. Частота рассылок
+                </h3>
+                <p>Не более 4 (четырёх) сообщений в месяц. Вы можете изменить частоту или отказаться в любой момент.</p>
+
+                <h3 style="font-size: 1rem; margin: 16px 0 12px; color: var(--accent-light);">
+                    17.5. Отказ от рассылки
+                </h3>
+                <p>Вы можете отозвать согласие в любой момент:</p>
+                <ul>
+                    <li>Нажав ссылку «Отписаться» в любом email-письме</li>
+                    <li>Ответив словом «СТОП» на SMS-сообщение</li>
+                    <li>Написав на <a href="mailto:privacy@donbassit.ru" style="color: var(--accent);">privacy@donbassit.ru</a></li>
+                    <li>Написав в Telegram <a href="https://t.me/doit_privacy" style="color: var(--accent);">@doit_privacy</a></li>
+                </ul>
+
+                <div class="privacy__cookies-info">
+                    ⚠️ <strong>Важно:</strong> Без данного согласия мы не будем отправлять вам рекламные материалы.
+                    Мы продолжим отправлять только служебные уведомления, связанные с вашим обращением или договором.
+                </div>
+            </section>
+
+            <section class="privacy__section">
+                <h2><span class="privacy__num">14</span>Контакты</h2>
+                <div class="privacy__card">
+                    <strong>Ответственный за обработку персональных данных</strong>
+                    <span>
+                        Email: <a href="mailto:dev@donbassit.ru" style="color: var(--accent);">dev@donbassit.ru</a><br>
+                        Telegram: <a href="https://t.me/exxxxar" style="color: var(--accent);">@exxxar</a><br>
+                        Адрес: 350073, Краснодарский край, г. Краснодар, мкр. Любимово, д. 2, кв. 1166
+                    </span>
+                </div>
+                <p style="margin-top: 16px;">
+                    Также вы можете обратиться в <strong>Роскомнадзор</strong> — уполномоченный орган
+                    по защите прав субъектов персональных данных:
+                    <a href="https://rkn.gov.ru" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">rkn.gov.ru</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

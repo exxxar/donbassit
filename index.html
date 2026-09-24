@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOIT — Донбасс АйТи | Fullstack-разработка IT-решений</title>
+    <meta name="description" content="Донбасс АйТи (DOIT) — fullstack-разработка сложных IT-решений. От корпоративных сайтов до высоконагруженных enterprise-систем. ИП Гукай А.С.">
+    <meta name="keywords" content="fullstack разработка, IT компания, веб разработка, Laravel, Vue.js, enterprise, high-load, Донецк, Краснодар">
+    <meta name="author" content="Донбасс АйТи (DOIT), ИП Гукай Алексей Сергеевич">
+    <meta name="copyright" content="© 2026 Донбасс АйТи">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    <meta name="revisit-after" content="7 days">
+    <!-- ===== КАНОНИЧЕСКИЙ URL ===== -->
+    <link rel="canonical" href="https://donbassit.ru/">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description"
+          content="Fullstack-разработка сложных IT-решений — от корпоративных сайтов до высоконагруженных enterprise-систем">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ===== OPEN GRAPH (Facebook, VK, LinkedIn, Telegram, Slack) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Донбасс АйТи (DOIT)">
+    <meta property="og:title" content="DOIT — Fullstack-разработка IT-решений">
+    <meta property="og:description" content="Создаём цифровые продукты: от корпоративных сайтов до высоконагруженных enterprise-систем. 50+ проектов, 10+ лет опыта.">
+    <meta property="og:url" content="https://donbassit.ru/">
+    <meta property="og:image" content="https://donbassit.ru/og-image.php?title=Веб-разработка&subtitle=Laravel + Vue.js">
+    <meta property="og:image:secure_url" content="https://donbassit.ru/og-image.php?title=Веб-разработка&subtitle=Laravel + Vue.js">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="DOIT — Донбасс АйТи | Fullstack-разработка">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- ===== TWITTER CARDS ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DOIT — Fullstack-разработка IT-решений">
+    <meta name="twitter:description" content="Создаём цифровые продукты: от корпоративных сайтов до высоконагруженных enterprise-систем.">
+    <meta name="twitter:image" content="https://donbassit.ru/assets/images/og-cover.jpg">
+    <meta name="twitter:image:alt" content="DOIT — Донбасс АйТи">
+    <meta name="twitter:site" content="@exxxar">
+    <meta name="twitter:creator" content="@exxxar">
+
+    <!-- ===== TELEGRAM INSTANT VIEW ===== -->
+    <meta property="telegram:channel" content="@exxxar">
+
+    <!-- ===== ТЕМА БРАУЗЕРА ===== -->
+    <meta name="theme-color" content="#0a0a0f">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0a0f">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ff6b00">
+    <meta name="msapplication-TileColor" content="#ff6b00">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="DOIT">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6b00">
+
+    <!-- ===== PWA MANIFEST ===== -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- ===== ШРИФТЫ ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ===== СТИЛИ ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ===== SCHEMA.ORG (JSON-LD) для Google ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Донбасс АйТи",
+            "alternateName": "DOIT",
+            "url": "https://donbassit.ru",
+            "logo": "https://donbassit.ru/assets/images/logo.png",
+            "description": "Fullstack-разработка сложных IT-решений — от корпоративных сайтов до высоконагруженных enterprise-систем",
+            "foundingDate": "2015",
+            "founder": {
+                "@type": "Person",
+                "name": "Алексей Гукай",
+                "jobTitle": "Team Lead / Fullstack Developer",
+                "url": "https://гукай.рф"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ул. Артема, 00",
+                "addressLocality": "Донецк",
+                "postalCode": "283000",
+                "addressCountry": "RU"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "info@donbassit.ru",
+                "contactType": "customer service",
+                "availableLanguage": ["Russian", "English"]
+            },
+            "sameAs": [
+                "https://t.me/doit_dev",
+                "https://гукай.рф"
+            ],
+            "knowsAbout": [
+                "Fullstack Development",
+                "Laravel",
+                "Vue.js",
+                "Node.js",
+                ".NET",
+                "Enterprise Solutions",
+                "High-Load Systems",
+                "Blockchain",
+                "AI/ML"
+            ]
+        }
+    </script>
+    <!-- ===== ДОПОЛНИТЕЛЬНАЯ SCHEMA.ORG РАЗМЕТКА ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "DOIT — Донбасс АйТи",
+            "url": "https://donbassit.ru",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://donbassit.ru/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+</head>
+<body>
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo">
+            <div class="logo__main">
+                <span class="logo__text">DOIT</span>
+                <span class="logo__dot"></span>
+            </div>
+            <span class="logo__subtitle">Донбасс АйТи</span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#services" class="nav__link">Услуги</a>
+            <a href="#team" class="nav__link">Команда</a>
+            <a href="#portfolio" class="nav__link">Портфолио</a>
+            <a href="#contact" class="nav__link">Контакты</a>
+            <a href="#contact" class="btn btn--accent nav__cta">Начать проект</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero__badge">✨ Донбасс АйТи</div>
+        <h1 class="hero__title">
+            Мы создаём<br>
+            <span class="text-gradient">цифровые продукты</span>
+        </h1>
+        <p class="hero__subtitle">
+            Fullstack-разработка сложных IT-решений — от корпоративных сайтов до высоконагруженных enterprise-систем
+        </p>
+        <div class="hero__actions">
+            <a href="#portfolio" class="btn btn--accent btn--lg">
+                Смотреть проекты
+                <span class="btn__arrow">→</span>
+            </a>
+            <a href="#contact" class="btn btn--outline btn--lg">Связаться с нами</a>
+        </div>
+        <div class="hero__stats">
+            <div class="stat">
+                <span class="stat__number">50+</span>
+                <span class="stat__label">Реализованных проектов</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number">10+</span>
+                <span class="stat__label">Лет опыта</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number">15+</span>
+                <span class="stat__label">Технологий</span>
+            </div>
+            <div class="stat">
+                <span class="stat__number">100%</span>
+                <span class="stat__label">Успешных запусков</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero__glow"></div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <div class="container">
+        <div class="section__header">
+            <span class="section__badge">Наши компетенции</span>
+            <h2 class="section__title">Разрабатываем решения любой сложности</h2>
+            <p class="section__subtitle">От лендингов до enterprise-систем</p>
+        </div>
+        <div class="services-grid">
+            <!-- Веб-разработка -->
+            <div class="service-card" data-animate="fade-up">
+                <div class="service-card__icon">💻</div>
+                <h3 class="service-card__title">Веб-разработка</h3>
+                <p class="service-card__desc">Корпоративные сайты, интернет-магазины, лендинги и промо-платформы с
+                    современным дизайном</p>
+                <div class="service-card__tags">
+                    <span class="tag">Laravel</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">WordPress</span>
+                </div>
+            </div>
+
+            <!-- High-Load -->
+            <div class="service-card" data-animate="fade-up">
+                <div class="service-card__icon">⚡</div>
+                <h3 class="service-card__title">High-Load системы</h3>
+                <p class="service-card__desc">Высоконагруженные платформы с кастомной бизнес-логикой и оптимизацией
+                    производительности</p>
+                <div class="service-card__tags">
+                    <span class="tag">.NET</span>
+                    <span class="tag">Microservices</span>
+                    <span class="tag">Redis</span>
+                </div>
+            </div>
+
+            <!-- Мобильная -->
+            <div class="service-card" data-animate="fade-up">
+                <div class="service-card__icon">📱</div>
+                <h3 class="service-card__title">Мобильная разработка</h3>
+                <p class="service-card__desc">Кроссплатформенные приложения для iOS и Android, Telegram Mini Apps</p>
+                <div class="service-card__tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Telegram API</span>
+                </div>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="service-card" data-animate="fade-up">
+                <div class="service-card__icon">🏢</div>
+                <h3 class="service-card__title">Enterprise решения</h3>
+                <p class="service-card__desc">CRM, ERP, системы управления и поддержки принятия решений для бизнеса</p>
+                <div class="service-card__tags">
+                    <span class="tag">Clean Arch</span>
+                    <span class="tag">DDD</span>
+                    <span class="tag">CQRS</span>
+                </div>
+            </div>
+
+            <!-- Игровые -->
+            <div class="service-card" data-animate="fade-up">
+                <div class="service-card__icon">🎮</div>
+                <h3 class="service-card__title">Игровые платформы</h3>
+                <p class="service-card__desc">Web3-гейминг, блокчейн-интеграции, высоконагруженные онлайн-сервисы</p>
+                <div class="service-card__tags">
+                    <span class="tag">Blockchain</span>
+                    <span class="tag">WebSocket</span>
+                    <span class="tag">NFT</span>
+                </div>
+            </div>
+
+            <!-- AI -->
+            <div class="service-card" data-animate="fade-up">
+                <div class="service-card__icon">🤖</div>
+                <h3 class="service-card__title">AI и автоматизация</h3>
+                <p class="service-card__desc">ИИ-платформы, чат-боты, парсинг данных и автоматизация
+                    бизнес-процессов</p>
+                <div class="service-card__tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">AI/ML</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="section section--dark" id="team">
+    <div class="container">
+        <div class="section__header">
+            <span class="section__badge">Наша команда</span>
+            <h2 class="section__title">Профессионалы с многолетним опытом</h2>
+            <p class="section__subtitle">В различных областях IT</p>
+        </div>
+
+        <!-- Team Lead -->
+        <div class="team-featured" data-animate="fade-up">
+            <div class="team-featured__avatar">👨‍💻</div>
+            <div class="team-featured__info">
+                <h3 class="team-featured__name">Алексей Гукай</h3>
+                <span class="team-featured__role">Team Lead / Fullstack Developer</span>
+                <p class="team-featured__bio">
+                    Senior fullstack разработчик с опытом более 10 лет. Специализация: сложные высоконагруженные
+                    системы, enterprise-решения, блокчейн-платформы.
+                    <br><br>
+                    Преподаватель кафедры компьютерных технологий ДонНУ, наставник федеральной программы «Я в деле»,
+                    соучредитель IT-компаний.
+                </p>
+                <div class="team-featured__projects">
+                    <strong>Ключевые проекты:</strong> ForesightZone, Vulcan Forged, BetRoute, myChess, ГорВодоканал и
+                    еще 45+ проектов
+                </div>
+                <div class="team-featured__tags">
+                    <span class="tag">Laravel</span>
+                    <span class="tag">.NET</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Python</span>
+                </div>
+
+                <!-- ✨ Новая кнопка — ссылка на личный сайт -->
+                <div class="team-featured__cta-wrapper">
+                    <a href="https://гукай.рф/" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
+                        <span class="profile-link-btn__icon">🌐</span>
+                        <span class="profile-link-btn__content">
+            <span class="profile-link-btn__title">Личный сайт Алексея</span>
+            <span class="profile-link-btn__subtitle">Портфолио, кейсы и статьи</span>
+        </span>
+                        <span class="profile-link-btn__arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Grid -->
+        <div class="team-grid">
+            <div class="team-card" data-animate="fade-up">
+                <div class="team-card__avatar">🎨</div>
+                <h4 class="team-card__name">Дизайнер UI/UX</h4>
+                <span class="team-card__role">Lead Designer</span>
+                <p class="team-card__desc">Создание уникальных интерфейсов для сложных веб-приложений и мобильных
+                    платформ.</p>
+                <div class="team-card__tags">
+                    <span class="tag tag--sm">Figma</span>
+                    <span class="tag tag--sm">Adobe XD</span>
+                    <span class="tag tag--sm">UI/UX</span>
+                </div>
+            </div>
+
+            <div class="team-card" data-animate="fade-up">
+                <div class="team-card__avatar">👩‍💻</div>
+                <h4 class="team-card__name">Frontend Developer</h4>
+                <span class="team-card__role">Senior Frontend</span>
+                <p class="team-card__desc">Разработка сложных SPA приложений на современных фреймворках.</p>
+                <div class="team-card__tags">
+                    <span class="tag tag--sm">Vue.js</span>
+                    <span class="tag tag--sm">React</span>
+                    <span class="tag tag--sm">TypeScript</span>
+                </div>
+            </div>
+
+            <div class="team-card" data-animate="fade-up">
+                <div class="team-card__avatar">👨‍💻</div>
+                <h4 class="team-card__name">Backend Developer</h4>
+                <span class="team-card__role">Senior Backend</span>
+                <p class="team-card__desc">Масштабируемые backend-системы, микросервисная архитектура.</p>
+                <div class="team-card__tags">
+                    <span class="tag tag--sm">Laravel</span>
+                    <span class="tag tag--sm">.NET</span>
+                    <span class="tag tag--sm">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="team-card" data-animate="fade-up">
+                <div class="team-card__avatar">📱</div>
+                <h4 class="team-card__name">Mobile Developer</h4>
+                <span class="team-card__role">Cross-platform</span>
+                <p class="team-card__desc">Кроссплатформенные мобильные приложения, Telegram Mini Apps.</p>
+                <div class="team-card__tags">
+                    <span class="tag tag--sm">React Native</span>
+                    <span class="tag tag--sm">Flutter</span>
+                    <span class="tag tag--sm">iOS</span>
+                </div>
+            </div>
+
+            <div class="team-card" data-animate="fade-up">
+                <div class="team-card__avatar">🛠️</div>
+                <h4 class="team-card__name">DevOps Engineer</h4>
+                <span class="team-card__role">Infrastructure</span>
+                <p class="team-card__desc">CI/CD, облачная инфраструктура, контейнеризация, мониторинг.</p>
+                <div class="team-card__tags">
+                    <span class="tag tag--sm">Docker</span>
+                    <span class="tag tag--sm">Kubernetes</span>
+                    <span class="tag tag--sm">CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
+    <div class="container">
+        <div class="section__header">
+            <span class="section__badge">Наши проекты</span>
+            <h2 class="section__title">39+ успешных реализаций</h2>
+            <p class="section__subtitle">От корпоративных сайтов до высоконагруженных enterprise-систем</p>
+        </div>
+
+        <!-- Счётчики категорий -->
+        <div class="portfolio-summary">
+            <div class="portfolio-summary__item">
+                <span class="portfolio-summary__count" data-count="39">0</span>
+                <span class="portfolio-summary__label">проектов</span>
+            </div>
+            <div class="portfolio-summary__item">
+                <span class="portfolio-summary__count" data-count="12">0</span>
+                <span class="portfolio-summary__label">отраслей</span>
+            </div>
+            <div class="portfolio-summary__item">
+                <span class="portfolio-summary__count" data-count="25">0</span>
+                <span class="portfolio-summary__label">технологий</span>
+            </div>
+            <div class="portfolio-summary__item">
+                <span class="portfolio-summary__count" data-count="10">0</span>
+                <span class="portfolio-summary__label">лет опыта</span>
+            </div>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="portfolio-filters">
+            <button class="filter-btn filter-btn--active" data-filter="all">Все проекты <span class="filter-count" data-count-all>39</span></button>
+            <button class="filter-btn" data-filter="enterprise">Enterprise <span class="filter-count" data-count="enterprise">0</span></button>
+            <button class="filter-btn" data-filter="highload">High-Load <span class="filter-count" data-count="highload">0</span></button>
+            <button class="filter-btn" data-filter="web">Веб-платформы <span class="filter-count" data-count="web">0</span></button>
+            <button class="filter-btn" data-filter="ecommerce">E-Commerce <span class="filter-count" data-count="ecommerce">0</span></button>
+            <button class="filter-btn" data-filter="gaming">Игровые <span class="filter-count" data-count="gaming">0</span></button>
+            <button class="filter-btn" data-filter="fintech">Финтех <span class="filter-count" data-count="fintech">0</span></button>
+            <button class="filter-btn" data-filter="industrial">Промышленные <span class="filter-count" data-count="industrial">0</span></button>
+            <button class="filter-btn" data-filter="education">Образование <span class="filter-count" data-count="education">0</span></button>
+            <button class="filter-btn" data-filter="corporate">Корпоративные <span class="filter-count" data-count="corporate">0</span></button>
+        </div>
+
+        <!-- Сетка проектов (заполняется через JS) -->
+        <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Карточки вставляются динамически -->
+        </div>
+
+        <!-- Кнопка "Показать ещё" -->
+        <div class="portfolio-more-wrapper">
+            <button class="btn btn--outline btn--lg" id="portfolio-more">
+                Показать ещё проекты
+                <span class="btn__arrow">↓</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL: Детали проекта -->
+<div class="project-modal" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="project-modal__overlay" data-modal-close></div>
+    <div class="project-modal__content">
+        <button class="project-modal__close" data-modal-close aria-label="Закрыть">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <div class="project-modal__body" id="project-modal-body">
+            <!-- Содержимое вставляется динамически -->
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<section class="section section--dark" id="contact">
+    <div class="container">
+        <div class="section__header">
+            <span class="section__badge">Свяжитесь с нами</span>
+            <h2 class="section__title">Давайте создадим что-то великое</h2>
+            <p class="section__subtitle">Расскажите о вашем проекте, и мы предложим оптимальное решение</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-info__item">
+                    <span class="contact-info__icon">📧</span>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:dev@donbassit.ru">dev@donbassit.ru</a>
+                    </div>
+                </div>
+                <div class="contact-info__item">
+                    <span class="contact-info__icon">✈️</span>
+                    <div>
+                        <strong>Telegram</strong>
+                        <a href="https://t.me/exxxar" target="_blank">@exxxar</a>
+                    </div>
+                </div>
+                <div class="contact-info__item">
+                    <span class="contact-info__icon">📍</span>
+                    <div>
+                        <strong>Локация</strong>
+                        <span>Донецк | Краснодар | Remote</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="contact-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn tab-btn--active" data-tab="question">Вопрос</button>
+                    <button class="tab-btn" data-tab="cooperation">Сотрудничество</button>
+                    <button class="tab-btn" data-tab="job">Работа</button>
+                </div>
+
+                <!-- Form: Question -->
+                <form class="contact-form tab-content tab-content--active" id="form-question" action="process_form.php"
+                      method="POST">
+                    <input type="hidden" name="form_type" value="question">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" name="name" class="form-input" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-input" placeholder="email@example.com"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Тема вопроса</label>
+                        <select name="topic" class="form-input form-select" required>
+                            <option value="">Выберите тему</option>
+                            <option value="technical">Технический вопрос</option>
+                            <option value="project">Вопрос по проекту</option>
+                            <option value="pricing">Стоимость услуг</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Ваш вопрос</label>
+                        <textarea name="message" class="form-input form-textarea" placeholder="Опишите ваш вопрос..."
+                                  required></textarea>
+                    </div>
+                    <!-- CONSENT BLOCK — ФЗ-152 + ФЗ-38 (ред. от 01.09.2025) -->
+                    <div class="consent-block">
+                        <div class="consent-block__header">
+                            <span class="consent-block__title">🔒 Согласия и документы</span>
+                            <span class="consent-block__hint">Все согласия оформляются отдельно, в соответствии с действующим законодательством РФ</span>
+                        </div>
+
+                        <!-- 1. Согласие на обработку ПДн (обязательное, required) -->
+                        <label class="checkbox checkbox--required">
+                            <input type="checkbox" name="consent_pd" value="1" required>
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+            Даю согласие на обработку моих персональных данных в целях рассмотрения заявки и обратной связи.
+            Ознакомлен(а) с
+            <a href="privacy.html#pd-consent" target="_blank" rel="noopener noreferrer">Согласием на обработку ПДн</a>
+            и
+            <a href="privacy.html" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>.
+            <span class="consent-badge consent-badge--required">Обязательно</span>
+        </span>
+                        </label>
+
+                        <!-- 2. Согласие на передачу ПДн третьим лицам (обязательное, required) -->
+                        <label class="checkbox checkbox--required">
+                            <input type="checkbox" name="consent_transfer" value="1" required>
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+            Даю согласие на передачу моих персональных данных третьим лицам (почтовые сервисы, мессенджеры, сервисы аналитики)
+            исключительно для обработки моей заявки и доставки уведомлений.
+            Ознакомлен(а) с
+            <a href="privacy.html#transfer-consent" target="_blank" rel="noopener noreferrer">Согласием на передачу ПДн третьим лицам</a>.
+            <span class="consent-badge consent-badge--required">Обязательно</span>
+        </span>
+                        </label>
+
+                        <!-- 3. Согласие на рекламную рассылку (НЕобязательное) -->
+                        <label class="checkbox checkbox--optional">
+                            <input type="checkbox" name="consent_mailing" value="1">
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+            Согласен(на) получать рекламные и информационные материалы по email, телефону, SMS и мессенджерам
+            (новости, акции, специальные предложения). Ознакомлен(а) с
+            <a href="privacy.html#mailing-consent" target="_blank" rel="noopener noreferrer">Согласием на получение рассылки</a>.
+            <span class="consent-badge consent-badge--optional">Необязательно</span>
+        </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--accent btn--lg btn--full">
+                        Отправить вопрос →
+                    </button>
+                </form>
+
+                <!-- Form: Cooperation -->
+                <form class="contact-form tab-content" id="form-cooperation" action="process_form.php" method="POST">
+                    <input type="hidden" name="form_type" value="cooperation">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" name="name" class="form-input" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Компания</label>
+                            <input type="text" name="company" class="form-input" placeholder="Название компании">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-input" placeholder="email@example.com"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Телефон</label>
+                            <input type="tel" name="phone" class="form-input" placeholder="+7 (999) 123-45-67">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Тип сотрудничества</label>
+                        <select name="cooperation_type" class="form-input form-select" required>
+                            <option value="">Выберите тип</option>
+                            <option value="development">Разработка проекта</option>
+                            <option value="outsource">Аутсорс разработка</option>
+                            <option value="consulting">Консалтинг</option>
+                            <option value="partnership">Партнерство</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Описание проекта</label>
+                        <textarea name="message" class="form-input form-textarea"
+                                  placeholder="Расскажите о вашем проекте..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--accent btn--lg btn--full">
+                        Отправить заявку →
+                    </button>
+                </form>
+
+                <!-- Form: Job -->
+                <form class="contact-form tab-content" id="form-job" action="process_form.php" method="POST">
+                    <input type="hidden" name="form_type" value="job">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" name="name" class="form-input" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Желаемая позиция</label>
+                            <input type="text" name="position" class="form-input" placeholder="Frontend Developer"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-input" placeholder="email@example.com"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Telegram</label>
+                            <input type="text" name="telegram" class="form-input" placeholder="@username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Уровень</label>
+                        <select name="level" class="form-input form-select" required>
+                            <option value="">Выберите уровень</option>
+                            <option value="junior">Junior</option>
+                            <option value="middle">Middle</option>
+                            <option value="senior">Senior</option>
+                            <option value="lead">Team Lead</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Расскажите о себе</label>
+                        <textarea name="message" class="form-input form-textarea" placeholder="Опыт, навыки, проекты..."
+                                  required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--accent btn--lg btn--full">
+                        Отправить резюме →
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <a href="index.html" class="logo">
+                    <div class="logo__main">
+                        <span class="logo__text">DOIT</span>
+                        <span class="logo__dot"></span>
+                    </div>
+                    <span class="logo__subtitle">Донбасс АйТи</span>
+                </a>
+                <p class="footer__desc">© 2026 Донбасс АйТи (DOIT). Все права защищены.</p>
+                <p class="footer__location">Донецк | Краснодар | Удалённая работа по всему миру</p>
+            </div>
+            <div class="footer__legal">
+                <div class="footer__owner">
+                    <strong>ООО "Некст Групп"</strong>
+                    <span>ОГРНИП 1242300017794 · ИНН 2311362790</span>
+                    <span>350073, Краснодарский край, г. Краснодар, мкр. Любимово, д. 2, кв. 1166</span>
+                </div>
+                <nav class="footer__docs">
+                    <a href="privacy.html" class="footer__doc-link">Политика конфиденциальности</a>
+                    <button class="footer__doc-link footer__cookie-btn" id="cookie-settings-btn">
+                        Настройки cookies
+                    </button>
+                </nav>
+            </div>
+            <div class="footer__socials">
+                <a href="#" class="social-link" aria-label="Telegram">✈️</a>
+                <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                <a href="mailto:dev@donbassit.ru" class="social-link" aria-label="Email">📧</a>
+                <a href="#" class="social-link" aria-label="GitHub">🐙</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Toast notification -->
+<div class="toast" id="toast">
+    <span class="toast__icon">✅</span>
+    <span class="toast__text">Сообщение отправлено! Скоро свяжемся с вами.</span>
+</div>
+
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner__inner">
+        <div class="cookie-banner__icon">🍪</div>
+        <div class="cookie-banner__content">
+            <h3 class="cookie-banner__title">Мы используем cookies</h3>
+            <p class="cookie-banner__text">
+                Мы используем файлы cookie для работы сайта, аналитики и улучшения сервиса.
+                Технические cookie необходимы для работы сайта. Аналитические — помогают нам
+                понять, как вы используете сайт. Подробнее — в
+                <a href="privacy.html" target="_blank" rel="noopener noreferrer">Политике конфиденциальности</a>.
+            </p>
+            <div class="cookie-banner__options">
+                <label class="checkbox">
+                    <input type="checkbox" id="cookie-technical" checked disabled>
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__text">Необходимые (всегда активны)</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="cookie-analytics">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__text">Аналитические</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="cookie-functional">
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__text">Функциональные</span>
+                </label>
+            </div>
+        </div>
+        <div class="cookie-banner__actions">
+            <button class="btn btn--accent" id="cookie-accept-all">Принять все</button>
+            <button class="btn btn--outline" id="cookie-accept-selected">Только выбранные</button>
+            <button class="btn btn--ghost" id="cookie-reject">Отклонить необязательные</button>
+        </div>
+    </div>
+</div>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
