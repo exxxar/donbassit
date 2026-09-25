@@ -1480,7 +1480,7 @@
             contacts: [
                 { icon: '✈️', label: 'Telegram', value: '@gukay', href: 'https://t.me/exxxar' },
                 { icon: '🌐', label: 'Сайт', value: 'гукай.рф', href: 'https://гукай.рф' },
-                { icon: '📧', label: 'Email', value: 'info@donbassit.ru', href: 'mailto:exxxar@vk.com' }
+                { icon: '📧', label: 'Email', value: 'exxxar@vk.com', href: 'mailto:exxxar@vk.com' }
             ]
         },
         shipilov: {

@@ -3353,3 +3353,37 @@ input, textarea, select {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== CONTACT INFO LEGAL BLOCK ===== */
+.contact-info__legal {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+.contact-info__legal strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.contact-info__legal span {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .contact-info__legal {
+        font-size: 0.75rem;
+        padding: 16px;
+    }
+}

@@ -627,7 +627,7 @@
                     <span class="contact-info__icon">✈️</span>
                     <div>
                         <strong>Telegram</strong>
-                        <a href="https://t.me/exxxar" target="_blank">@exxxar</a>
+                        <a href="https://t.me/exxxar" target="_blank" rel="noopener noreferrer">@exxxar</a>
                     </div>
                 </div>
                 <div class="contact-info__item">
@@ -636,6 +636,15 @@
                         <strong>Локация</strong>
                         <span>Донецк | Краснодар | Remote</span>
                     </div>
+                </div>
+
+                <!-- Доп. блок с юр. информацией -->
+                <div class="contact-info__legal">
+                    <strong>🏢 Донбасс АйТи (DOIT)</strong>
+                    <span>ИП Гукай Алексей Сергеевич</span>
+                    <span>ОГРНИП 315932000000000</span>
+                    <span>ИНН 930000000000</span>
+                    <span>283000, ДНР, г. Донецк</span>
                 </div>
             </div>
 
@@ -647,9 +656,10 @@
                     <button class="tab-btn" data-tab="job">Работа</button>
                 </div>
 
-                <!-- Form: Question -->
-                <form class="contact-form tab-content tab-content--active" id="form-question" action="process_form.php"
-                      method="POST">
+                <!-- =========================== -->
+                <!-- FORM 1: ВОПРОС              -->
+                <!-- =========================== -->
+                <form class="contact-form tab-content tab-content--active" id="form-question" action="process_form.php" method="POST">
                     <input type="hidden" name="form_type" value="question">
                     <div class="form-row">
                         <div class="form-group">
@@ -658,8 +668,7 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-input" placeholder="email@example.com"
-                                   required>
+                            <input type="email" name="email" class="form-input" placeholder="email@example.com" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -674,53 +683,50 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Ваш вопрос</label>
-                        <textarea name="message" class="form-input form-textarea" placeholder="Опишите ваш вопрос..."
-                                  required></textarea>
+                        <textarea name="message" class="form-input form-textarea" placeholder="Опишите ваш вопрос..." required></textarea>
                     </div>
-                    <!-- CONSENT BLOCK — ФЗ-152 + ФЗ-38 (ред. от 01.09.2025) -->
+
+                    <!-- CONSENT BLOCK -->
                     <div class="consent-block">
                         <div class="consent-block__header">
                             <span class="consent-block__title">🔒 Согласия и документы</span>
                             <span class="consent-block__hint">Все согласия оформляются отдельно, в соответствии с действующим законодательством РФ</span>
                         </div>
 
-                        <!-- 1. Согласие на обработку ПДн (обязательное, required) -->
                         <label class="checkbox checkbox--required">
                             <input type="checkbox" name="consent_pd" value="1" required>
                             <span class="checkbox__mark"></span>
                             <span class="checkbox__text">
-            Даю согласие на обработку моих персональных данных в целях рассмотрения заявки и обратной связи.
-            Ознакомлен(а) с
-            <a href="/privacy#pd-consent" target="_blank" rel="noopener noreferrer">Согласием на обработку ПДн</a>
-            и
-            <a href="/privacy" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>.
-            <span class="consent-badge consent-badge--required">Обязательно</span>
-        </span>
+                                Даю согласие на обработку моих персональных данных в целях рассмотрения заявки и обратной связи.
+                                Ознакомлен(а) с
+                                <a href="/privacy#pd-consent" target="_blank" rel="noopener noreferrer">Согласием на обработку ПДн</a>
+                                и
+                                <a href="/privacy" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>.
+                                <span class="consent-badge consent-badge--required">Обязательно</span>
+                            </span>
                         </label>
 
-                        <!-- 2. Согласие на передачу ПДн третьим лицам (обязательное, required) -->
                         <label class="checkbox checkbox--required">
                             <input type="checkbox" name="consent_transfer" value="1" required>
                             <span class="checkbox__mark"></span>
                             <span class="checkbox__text">
-            Даю согласие на передачу моих персональных данных третьим лицам (почтовые сервисы, мессенджеры, сервисы аналитики)
-            исключительно для обработки моей заявки и доставки уведомлений.
-            Ознакомлен(а) с
-            <a href="/privacy#transfer-consent" target="_blank" rel="noopener noreferrer">Согласием на передачу ПДн третьим лицам</a>.
-            <span class="consent-badge consent-badge--required">Обязательно</span>
-        </span>
+                                Даю согласие на передачу моих персональных данных третьим лицам (почтовые сервисы, мессенджеры, сервисы аналитики)
+                                исключительно для обработки моей заявки и доставки уведомлений.
+                                Ознакомлен(а) с
+                                <a href="/privacy#transfer-consent" target="_blank" rel="noopener noreferrer">Согласием на передачу ПДн третьим лицам</a>.
+                                <span class="consent-badge consent-badge--required">Обязательно</span>
+                            </span>
                         </label>
 
-                        <!-- 3. Согласие на рекламную рассылку (НЕобязательное) -->
                         <label class="checkbox checkbox--optional">
                             <input type="checkbox" name="consent_mailing" value="1">
                             <span class="checkbox__mark"></span>
                             <span class="checkbox__text">
-            Согласен(на) получать рекламные и информационные материалы по email, телефону, SMS и мессенджерам
-            (новости, акции, специальные предложения). Ознакомлен(а) с
-            <a href="/privacy#mailing-consent" target="_blank" rel="noopener noreferrer">Согласием на получение рассылки</a>.
-            <span class="consent-badge consent-badge--optional">Необязательно</span>
-        </span>
+                                Согласен(на) получать рекламные и информационные материалы по email, телефону, SMS и мессенджерам
+                                (новости, кейсы, специальные предложения). Ознакомлен(а) с
+                                <a href="/privacy#mailing-consent" target="_blank" rel="noopener noreferrer">Согласием на получение рассылки</a>.
+                                <span class="consent-badge consent-badge--optional">Необязательно</span>
+                            </span>
                         </label>
                     </div>
 
@@ -729,7 +735,9 @@
                     </button>
                 </form>
 
-                <!-- Form: Cooperation -->
+                <!-- =========================== -->
+                <!-- FORM 2: СОТРУДНИЧЕСТВО      -->
+                <!-- =========================== -->
                 <form class="contact-form tab-content" id="form-cooperation" action="process_form.php" method="POST">
                     <input type="hidden" name="form_type" value="cooperation">
                     <div class="form-row">
@@ -745,8 +753,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-input" placeholder="email@example.com"
-                                   required>
+                            <input type="email" name="email" class="form-input" placeholder="email@example.com" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Телефон</label>
@@ -765,15 +772,61 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Описание проекта</label>
-                        <textarea name="message" class="form-input form-textarea"
-                                  placeholder="Расскажите о вашем проекте..." required></textarea>
+                        <textarea name="message" class="form-input form-textarea" placeholder="Расскажите о вашем проекте..." required></textarea>
                     </div>
+
+                    <!-- CONSENT BLOCK -->
+                    <div class="consent-block">
+                        <div class="consent-block__header">
+                            <span class="consent-block__title">🔒 Согласия и документы</span>
+                            <span class="consent-block__hint">Все согласия оформляются отдельно, в соответствии с действующим законодательством РФ</span>
+                        </div>
+
+                        <label class="checkbox checkbox--required">
+                            <input type="checkbox" name="consent_pd" value="1" required>
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+                                Даю согласие на обработку моих персональных данных в целях рассмотрения заявки на сотрудничество и подготовки коммерческого предложения.
+                                Ознакомлен(а) с
+                                <a href="/privacy#pd-consent" target="_blank" rel="noopener noreferrer">Согласием на обработку ПДн</a>
+                                и
+                                <a href="/privacy" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>.
+                                <span class="consent-badge consent-badge--required">Обязательно</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox checkbox--required">
+                            <input type="checkbox" name="consent_transfer" value="1" required>
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+                                Даю согласие на передачу моих персональных данных третьим лицам (почтовые сервисы, мессенджеры, сервисы аналитики)
+                                исключительно для обработки моей заявки и доставки уведомлений.
+                                Ознакомлен(а) с
+                                <a href="/privacy#transfer-consent" target="_blank" rel="noopener noreferrer">Согласием на передачу ПДн третьим лицам</a>.
+                                <span class="consent-badge consent-badge--required">Обязательно</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox checkbox--optional">
+                            <input type="checkbox" name="consent_mailing" value="1">
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+                                Согласен(на) получать рекламные и информационные материалы по email, телефону, SMS и мессенджерам
+                                (новости, кейсы, специальные предложения). Ознакомлен(а) с
+                                <a href="/privacy#mailing-consent" target="_blank" rel="noopener noreferrer">Согласием на получение рассылки</a>.
+                                <span class="consent-badge consent-badge--optional">Необязательно</span>
+                            </span>
+                        </label>
+                    </div>
+
                     <button type="submit" class="btn btn--accent btn--lg btn--full">
                         Отправить заявку →
                     </button>
                 </form>
 
-                <!-- Form: Job -->
+                <!-- =========================== -->
+                <!-- FORM 3: РАБОТА              -->
+                <!-- =========================== -->
                 <form class="contact-form tab-content" id="form-job" action="process_form.php" method="POST">
                     <input type="hidden" name="form_type" value="job">
                     <div class="form-row">
@@ -783,15 +836,13 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">Желаемая позиция</label>
-                            <input type="text" name="position" class="form-input" placeholder="Frontend Developer"
-                                   required>
+                            <input type="text" name="position" class="form-input" placeholder="Frontend Developer" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-input" placeholder="email@example.com"
-                                   required>
+                            <input type="email" name="email" class="form-input" placeholder="email@example.com" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Telegram</label>
@@ -810,9 +861,53 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label">Расскажите о себе</label>
-                        <textarea name="message" class="form-input form-textarea" placeholder="Опыт, навыки, проекты..."
-                                  required></textarea>
+                        <textarea name="message" class="form-input form-textarea" placeholder="Опыт, навыки, проекты..." required></textarea>
                     </div>
+
+                    <!-- CONSENT BLOCK -->
+                    <div class="consent-block">
+                        <div class="consent-block__header">
+                            <span class="consent-block__title">🔒 Согласия и документы</span>
+                            <span class="consent-block__hint">Все согласия оформляются отдельно, в соответствии с действующим законодательством РФ</span>
+                        </div>
+
+                        <label class="checkbox checkbox--required">
+                            <input type="checkbox" name="consent_pd" value="1" required>
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+                                Даю согласие на обработку моих персональных данных в целях рассмотрения моей кандидатуры на вакантную позицию и проведения собеседования.
+                                Ознакомлен(а) с
+                                <a href="/privacy#pd-consent" target="_blank" rel="noopener noreferrer">Согласием на обработку ПДн</a>
+                                и
+                                <a href="/privacy" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>.
+                                <span class="consent-badge consent-badge--required">Обязательно</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox checkbox--required">
+                            <input type="checkbox" name="consent_transfer" value="1" required>
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+                                Даю согласие на передачу моих персональных данных третьим лицам (почтовые сервисы, мессенджеры, сервисы аналитики)
+                                исключительно для обработки моей заявки и доставки уведомлений.
+                                Ознакомлен(а) с
+                                <a href="/privacy#transfer-consent" target="_blank" rel="noopener noreferrer">Согласием на передачу ПДн третьим лицам</a>.
+                                <span class="consent-badge consent-badge--required">Обязательно</span>
+                            </span>
+                        </label>
+
+                        <label class="checkbox checkbox--optional">
+                            <input type="checkbox" name="consent_mailing" value="1">
+                            <span class="checkbox__mark"></span>
+                            <span class="checkbox__text">
+                                Согласен(на) получать информационные материалы о новых вакансиях и карьерных возможностях по email, телефону, SMS и мессенджерам.
+                                Ознакомлен(а) с
+                                <a href="/privacy#mailing-consent" target="_blank" rel="noopener noreferrer">Согласием на получение рассылки</a>.
+                                <span class="consent-badge consent-badge--optional">Необязательно</span>
+                            </span>
+                        </label>
+                    </div>
+
                     <button type="submit" class="btn btn--accent btn--lg btn--full">
                         Отправить резюме →
                     </button>
