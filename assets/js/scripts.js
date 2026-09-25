@@ -1478,9 +1478,9 @@
                 { name: 'ГорВодоканал', cat: 'Enterprise ИС' }
             ],
             contacts: [
-                { icon: '✈️', label: 'Telegram', value: '@gukay', href: 'https://t.me/gukay' },
+                { icon: '✈️', label: 'Telegram', value: '@gukay', href: 'https://t.me/exxxar' },
                 { icon: '🌐', label: 'Сайт', value: 'гукай.рф', href: 'https://гукай.рф' },
-                { icon: '📧', label: 'Email', value: 'info@donbassit.ru', href: 'mailto:info@donbassit.ru' }
+                { icon: '📧', label: 'Email', value: 'info@donbassit.ru', href: 'mailto:exxxar@vk.com' }
             ]
         },
         shipilov: {
@@ -1536,8 +1536,8 @@
             contacts: [
                 { icon: '✈️', label: 'Telegram', value: '@vkysnuu_marketing', href: 'https://t.me/vkysnuu_marketing' },
                 { icon: '🌐', label: 'Сайт', value: 'шипилов-бизнес.рф', href: 'https://шипилов-бизнес.рф' },
-                { icon: '📧', label: 'Email', value: 'hello@shipilov.ru', href: 'mailto:hello@shipilov.ru' },
-                { icon: '📞', label: 'Телефон', value: '+7 (999) 000-00-00', href: 'tel:+79990000000' }
+                { icon: '📧', label: 'Email', value: 'hello@шипилов-бизнес.рф', href: 'mailto:hello@шипилов-бизнес.рф' },
+
             ]
         }
     };
