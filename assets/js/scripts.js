@@ -1455,4 +1455,221 @@
             btn.style.setProperty('--y', y + '%');
         });
     });
+
+    // ===== PROFILE MODAL DATA =====
+    var profilesData = {
+        gukay: {
+            name: 'Алексей Гукай',
+            role: 'Team Lead / Fullstack Developer',
+            avatar: '👨‍💻',
+            avatarClass: '',
+            quote: 'Разрабатываю сложные системы, которые работают годами',
+            bio: 'Senior fullstack разработчик с опытом более 10 лет. Специализация: сложные высоконагруженные системы, enterprise-решения, блокчейн-платформы. Преподаватель кафедры компьютерных технологий ДонНУ, наставник федеральной программы «Я в деле», соучредитель IT-компаний.',
+            stats: [
+                { value: '50+', label: 'проектов' },
+                { value: '10+', label: 'лет опыта' },
+                { value: '15+', label: 'технологий' }
+            ],
+            projects: [
+                { name: 'ForesightZone', cat: 'AI Platform' },
+                { name: 'Vulcan Forged', cat: 'Web3 Gaming' },
+                { name: 'BetRoute', cat: 'Betting ERP' },
+                { name: 'myChess', cat: 'Chess Platform' },
+                { name: 'ГорВодоканал', cat: 'Enterprise ИС' }
+            ],
+            contacts: [
+                { icon: '✈️', label: 'Telegram', value: '@gukay', href: 'https://t.me/gukay' },
+                { icon: '🌐', label: 'Сайт', value: 'гукай.рф', href: 'https://гукай.рф' },
+                { icon: '📧', label: 'Email', value: 'info@donbassit.ru', href: 'mailto:info@donbassit.ru' }
+            ]
+        },
+        shipilov: {
+            name: 'Егор Шипилов',
+            role: 'Entrepreneur / Marketing Director',
+            avatar: '🚀',
+            avatarClass: 'profile-modal__avatar--partner',
+            quote: 'Я не просто рассказываю о бизнесе — я создавал его сам',
+            bio: 'Предприниматель, маркетолог и создатель цифровых продуктов с 15+ годами опыта. Прошёл путь от классического ресторанного маркетинга и event-индустрии к созданию комплексных IT- и CRM-экосистем для бизнеса. Рабочая формула: <strong>ГИПОТЕЗА → ЗАПУСК → ИЗМЕРЕНИЕ → ВЫВОД → НОВЫЙ ЭКСПЕРИМЕНТ</strong>.',
+            stats: [
+                { value: '20+', label: 'собственных проектов' },
+                { value: '1000+', label: 'рекламных кампаний' },
+                { value: '1000+', label: 'мероприятий' },
+                { value: '18', label: 'номеров журнала' }
+            ],
+            timeline: [
+                { year: '2009', text: 'Старт медиапроекта Rest in Donetsk и компании Rest Service' },
+                { year: '2014', text: 'Открытие первого ресторанного проекта «Аркадия»' },
+                { year: '2014–2019', text: 'Активное развитие заведений и event-направления' },
+                { year: '2020–2022', text: 'Создание Next Group и Next IT — переход к маркетинг + IT' },
+                { year: '2026', text: 'Запуск проекта «Визит Донецк» — городское медиа 2.0' }
+            ],
+            projects: [
+                { name: 'Аркадия', cat: 'Restaurant, 2014' },
+                { name: 'Бочка', cat: 'Brewery, 2015' },
+                { name: 'Большой Джон', cat: 'Pizza, 2016' },
+                { name: 'E-Burger', cat: 'Burger, 2017' },
+                { name: 'Куба', cat: 'Restaurant, 2017' },
+                { name: 'Virus', cat: 'Night Club, 2015' },
+                { name: 'IMAGINE', cat: 'Cafe, 2016' },
+                { name: 'Пироги', cat: 'Cafe, 2018' },
+                { name: 'Лица', cat: 'Night Club, 2018' },
+                { name: 'Свинья', cat: 'Pub, 2017' },
+                { name: 'Аркадия Beach', cat: 'Beach, 2019' },
+                { name: 'iSushi', cat: 'Food, 2015' },
+                { name: 'Дайнер', cat: 'Food, 2016' },
+                { name: 'Burgers&iSushi', cat: 'Food, 2017' },
+                { name: 'Fastoran', cat: 'Delivery, 2018' },
+                { name: 'Азовская Креветка', cat: 'Resort, 2019' },
+                { name: 'ЁЖ', cat: 'Gastropub, 2021' },
+                { name: 'Шаурма на Углях', cat: 'Food, 2022' },
+                { name: 'Обеды GO', cat: 'Food, 2023' },
+                { name: 'Next IT', cat: 'IT-разработка, 2020' }
+            ],
+            speaking: [
+                { city: 'Донецк', topic: 'Ресторанный маркетинг', year: '2018' },
+                { city: 'Москва', topic: 'Маркетинг × IT', year: '2021' },
+                { city: 'Санкт-Петербург', topic: 'Telegram как канал продаж', year: '2022' },
+                { city: 'Ростов-на-Дону', topic: 'Событийный маркетинг', year: '2023' },
+                { city: 'Краснодар', topic: 'Программы лояльности', year: '2024' },
+                { city: 'Донецк', topic: 'Городское медиа 2.0', year: '2025' }
+            ],
+            contacts: [
+                { icon: '✈️', label: 'Telegram', value: '@vkysnuu_marketing', href: 'https://t.me/vkysnuu_marketing' },
+                { icon: '🌐', label: 'Сайт', value: 'шипилов-бизнес.рф', href: 'https://шипилов-бизнес.рф' },
+                { icon: '📧', label: 'Email', value: 'hello@shipilov.ru', href: 'mailto:hello@shipilov.ru' },
+                { icon: '📞', label: 'Телефон', value: '+7 (999) 000-00-00', href: 'tel:+79990000000' }
+            ]
+        }
+    };
+
+    // ===== PROFILE MODAL RENDER =====
+    var profileModal = document.getElementById('profile-modal');
+    var profileModalBody = document.getElementById('profile-modal-body');
+
+    function openProfileModal(profileKey) {
+        if (!profileModal || !profileModalBody) return;
+        var profile = profilesData[profileKey];
+        if (!profile) return;
+
+        var html = '';
+
+        // Header
+        html += '<div class="profile-modal__header">';
+        html += '<div class="profile-modal__avatar ' + (profile.avatarClass || '') + '">' + profile.avatar + '</div>';
+        html += '<div class="profile-modal__info">';
+        html += '<h2 class="profile-modal__name">' + profile.name + '</h2>';
+        html += '<div class="profile-modal__role">' + profile.role + '</div>';
+        if (profile.quote) {
+            html += '<div class="profile-modal__quote">"' + profile.quote + '"</div>';
+        }
+        html += '</div></div>';
+
+        // Stats
+        if (profile.stats && profile.stats.length) {
+            html += '<div class="profile-stats">';
+            profile.stats.forEach(function (s) {
+                html += '<div class="profile-stat">';
+                html += '<span class="profile-stat__value">' + s.value + '</span>';
+                html += '<span class="profile-stat__label">' + s.label + '</span>';
+                html += '</div>';
+            });
+            html += '</div>';
+        }
+
+        // Bio
+        html += '<div class="profile-section">';
+        html += '<h3 class="profile-section__title">👤 О себе</h3>';
+        html += '<p class="profile-section__text">' + profile.bio + '</p>';
+        html += '</div>';
+
+        // Timeline (для Егора)
+        if (profile.timeline && profile.timeline.length) {
+            html += '<div class="profile-section">';
+            html += '<h3 class="profile-section__title">🗺 Профессиональный путь</h3>';
+            html += '<div class="profile-timeline">';
+            profile.timeline.forEach(function (t) {
+                html += '<div class="profile-timeline__item">';
+                html += '<span class="profile-timeline__year">' + t.year + '</span>';
+                html += '<div class="profile-timeline__text">' + t.text + '</div>';
+                html += '</div>';
+            });
+            html += '</div></div>';
+        }
+
+        // Projects
+        if (profile.projects && profile.projects.length) {
+            html += '<div class="profile-section">';
+            html += '<h3 class="profile-section__title">🚀 Проекты (' + profile.projects.length + ')</h3>';
+            html += '<div class="profile-projects">';
+            profile.projects.forEach(function (p) {
+                html += '<div class="profile-project-item">';
+                html += '<span class="profile-project-item__name">' + p.name + '</span>';
+                html += '<span class="profile-project-item__cat">' + p.cat + '</span>';
+                html += '</div>';
+            });
+            html += '</div></div>';
+        }
+
+        // Speaking (для Егора)
+        if (profile.speaking && profile.speaking.length) {
+            html += '<div class="profile-section">';
+            html += '<h3 class="profile-section__title">🎤 Публичные выступления</h3>';
+            html += '<div class="profile-speaking">';
+            profile.speaking.forEach(function (s) {
+                html += '<div class="profile-speaking__item">';
+                html += '<span class="profile-speaking__city">' + s.city + '</span>';
+                html += '<span class="profile-speaking__topic">' + s.topic + '</span>';
+                html += '<span class="profile-speaking__year">' + s.year + '</span>';
+                html += '</div>';
+            });
+            html += '</div></div>';
+        }
+
+        // Contacts (только в модалке!)
+        if (profile.contacts && profile.contacts.length) {
+            html += '<div class="profile-section">';
+            html += '<h3 class="profile-section__title">📞 Контактные данные</h3>';
+            html += '<div class="profile-contacts">';
+            profile.contacts.forEach(function (c) {
+                html += '<a href="' + c.href + '" class="profile-contact" target="_blank" rel="noopener noreferrer">';
+                html += '<span class="profile-contact__icon">' + c.icon + '</span>';
+                html += '<div>';
+                html += '<span class="profile-contact__label">' + c.label + '</span>';
+                html += '<span class="profile-contact__value">' + c.value + '</span>';
+                html += '</div></a>';
+            });
+            html += '</div></div>';
+        }
+
+        profileModalBody.innerHTML = html;
+        profileModal.classList.add('profile-modal--visible');
+        profileModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeProfileModal() {
+        if (!profileModal) return;
+        profileModal.classList.remove('profile-modal--visible');
+        profileModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    // Open handlers
+    document.querySelectorAll('[data-profile]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var key = this.getAttribute('data-profile');
+            openProfileModal(key);
+        });
+    });
+
+    // Close handlers
+    document.querySelectorAll('[data-profile-close]').forEach(function (el) {
+        el.addEventListener('click', closeProfileModal);
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && profileModal && profileModal.classList.contains('profile-modal--visible')) {
+            closeProfileModal();
+        }
+    });
 })();
